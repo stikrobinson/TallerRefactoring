@@ -12,8 +12,8 @@ import java.util.List;
  */
 public class Scissors extends Choice{
     
-    public Scissors(String n, List<String> w) {
-        super(n, w);
+    public Scissors() {
+        super("Scissors", List.of("Paper"));
     }
     
 }

@@ -12,8 +12,8 @@ import java.util.List;
  */
 public class Rock extends Choice{
     
-    public Rock(String n, List<String> w) {
-        super(n, w);
+    public Rock() {
+        super("Rock", List.of("Scissors"));
     }
     
 }

@@ -24,10 +24,15 @@ public abstract class Choice {
         return name;
     }
     
-    public boolean winsAgainst(String c){
-        return winsAgainst.contains(c);
+    public boolean winsAgainst(Choice c){
+        return winsAgainst.contains(c.name);
     }
     public boolean drawsAgainst(Choice c){
-        return name.equals(c.getName());
+        return name.equals(c.name);
+    }
+    
+    @Override
+    public String toString(){
+        return name;
     }
 }

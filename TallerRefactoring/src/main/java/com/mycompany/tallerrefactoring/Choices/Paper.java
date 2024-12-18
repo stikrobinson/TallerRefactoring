@@ -12,8 +12,8 @@ import java.util.List;
  */
 public class Paper extends Choice{
     
-    public Paper(String n, List<String> w) {
-        super(n, w);
+    public Paper() {
+        super("Paper", List.of("Rock"));
     }
     
 }

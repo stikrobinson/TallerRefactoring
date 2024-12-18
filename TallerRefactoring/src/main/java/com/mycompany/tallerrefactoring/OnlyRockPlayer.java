@@ -5,19 +5,16 @@
 package com.mycompany.tallerrefactoring;
 
 import com.mycompany.tallerrefactoring.Choices.*;
-import com.mycompany.tallerrefactoring.ChoiceGenerators.*;
 import java.util.List;
 /**
  *
  * @author CltControl
  */
-public class RPSPlayer implements Player{
+public class OnlyRockPlayer implements Player{
     private int wins;
-    private ChoiceGenerator cg;
     
-    public RPSPlayer(){
+    public OnlyRockPlayer(){
         wins = 0;
-        cg = new DefaultChoiceGenerator();
     }
     
     @Override
@@ -32,7 +29,7 @@ public class RPSPlayer implements Player{
 
     @Override
     public Choice playerChoice(List<Choice> options) {
-        return cg.generateChoice(options);
+        return new Rock();
     }
     
 }

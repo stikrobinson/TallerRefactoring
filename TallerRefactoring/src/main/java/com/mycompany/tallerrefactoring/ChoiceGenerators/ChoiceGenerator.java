@@ -5,14 +5,13 @@
 package com.mycompany.tallerrefactoring.ChoiceGenerators;
 
 import com.mycompany.tallerrefactoring.Choices.Choice;
+import java.util.List;
 import java.util.Random;
 
 /**
  *
  * @author CltControl
  */
-public abstract class ChoiceGenerator {
-    public Choice generateChoice(ArrayList<Choice> options){
-        return Random.choice(options);
-    }
+public interface ChoiceGenerator {
+    public Choice generateChoice(List<Choice> options);
 }
