@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.tallerrefactoring;
+import com.mycompany.tallerrefactoring.ChoiceGenerators.ChoiceGenerator;
+import com.mycompany.tallerrefactoring.Choices.*;
+import com.mycompany.tallerrefactoring.ChoiceGenerators.*;
 
 /**
  *
@@ -11,23 +14,11 @@ package com.mycompany.tallerrefactoring;
 class Player {
     int wins;       // # of wins
     int winTotal;
+    private ChoiceGenerator cg;
 
     // Randomly choose rock, paper, or scissors
-    public String playerChoice() {
-        String choice = "";
-        int c = (int)(Math.random()*3);
-        switch(c) {
-            case 0:
-                choice = ("rock");
-                break;
-            case 1:
-                choice = ("paper");
-                break;
-            case 2:
-                choice = ("scissors");
-                break;
-        }
-        return choice;
+    public Choice playerChoice() {
+        return cg.generateChoice();
     }
 
     public int setWins() {

@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.tallerrefactoring;
-
+import com.mycompany.tallerrefactoring.Choices.*;
 /**
  *
  * @author CltControl
@@ -11,6 +11,7 @@ package com.mycompany.tallerrefactoring;
 // Simulate a game of Rock, Paper, Scissors
 public class RPSGame {
     public static void main(String args[]) {
+        
         Player p1 = new Player();
         Player p2 = new Player();
         boolean gameWon = false;
